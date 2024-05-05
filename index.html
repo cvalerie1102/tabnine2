@@ -1,1 +1,121 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision2Voice</title>
+    <style>
+        /* Existing CSS with adjustments for accessibility */
+        html {
+            background: linear-gradient(to right, #05295b, #195cba, #2148C0, #042484);
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #042484; /* Improved contrast */
+            color: white;
+        }
+        .nav-links {
+            list-style: none;
+        }
+        .nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+        .nav-links a {
+            color: #ffffff; /* Ensuring contrast */
+            text-decoration: none;
+        }
+        .feature, .specification, .pricing, .testimonials, .contact-form {
+            text-align: center;
+            padding: 20px;
+            color: white; /* Ensuring readability */
+        }
+        footer {
+            background: #195cba; /* Improved contrast */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Labels for form elements */
+        label {
+            display: block;
+            margin-top: 20px;
+            color: white; /* Ensuring readability */
+        }
+        input, select, textarea, button {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            display: block;
+            width: 90%;
+            padding: 10px;
+        }
+        button {
+            background-color: #4b72f1; /* Improved contrast */
+            color: white; /* Ensuring readability */
+            border: none;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            .nav-links li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Vision2Voice</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#versions">Versions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section id="home" class="feature">
+        <h1>Empowering Your Words with Voice</h1>
+        <p>Discover the innovative text-to-speech software solution designed to convert text into natural-sounding speech.</p>
+    </section>
+    <section id="features" class="specification">
+        <h2>Features & Benefits</h2>
+        <p>Advanced customization options, seamless integration, and support for multiple languages.</p>
+    </section>
+    <section id="versions" class="pricing">
+        <h2>Pricing Plans</h2>
+        <p>Choose the plan that fits your needs, with options for individuals, businesses, and enterprises.</p>
+    </section>
+    <section class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <p>"Vision2Voice has revolutionized our content strategy, making it accessible to a wider audience."</p>
+    </section>
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="inquiry-type">Inquiry Type</label>
+            <select id="inquiry-type" name="inquiry-type">
+                <option value="sales">Sales</option>
+                <option value="support">Support</option>
+                <option value="general">General Inquiries</option>
+            </select>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2023 Vision2Voice. Follow us on <a href="#" aria-label="Follow us on Social Media">Social Media</a>.
+    </footer>
+</body>
+</html>
